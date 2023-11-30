@@ -1,9 +1,8 @@
 ﻿double [] CreateArray(int minNum, int maxNum, int size){
 
     double [] array = new double [size];
-    Random random = new Random();
     for(int i = 0; i<size; i++){
-        array[i] = Math.Round(random.NextDouble() * (maxNum - minNum) + minNum, 2);
+        array[i] = Math.Round(new Random().NextDouble() * (maxNum - minNum) + minNum, 2);
     }
     return array;
 }
